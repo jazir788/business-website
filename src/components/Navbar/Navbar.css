@@ -85,6 +85,7 @@
         display: flex;
         background: var(--primary-color);
         flex-direction: column;
+        transform: translateX(-150%);
         width: 100%;
         font-size: 1.2rem;
         z-index: 99;
