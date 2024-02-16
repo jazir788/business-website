@@ -1,0 +1,15 @@
+h-wrapper{
+    background-color: var(--primary-color);
+    height: 120vh;
+    overflow: hidden;
+}
+
+.h-wrapper .container {
+    padding-top: 8rem;
+}
+
+.h-container{
+    display: flex;
+    height: 80vh;
+
+}
