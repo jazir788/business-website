@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import EmailBox from '../EmailBox/EmailBox'
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
                 Revenue based funding and execution support designed for early stage founders
             </div>
 
-            <span>Email box</span>
+            <EmailBox />
             </div>
             
 
