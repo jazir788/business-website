@@ -12,3 +12,21 @@
     z-index: 1;
 
 }
+
+/*  Commit 1 - Hero responsivenes
+    Commit 2 - Video Add 
+    Commit 3 video responsiveness
+*/
+
+
+@media (max-width: 1024px) {
+    .bv-video{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bv-video{
+        margin-top: 2rem;
+    }
+}
