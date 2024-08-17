@@ -33,13 +33,30 @@ const WhatWeDo = () => {
                                 ))}
                         </div>
                         </div>
-                    <div className='wwd-block'>Secondblock</div>
+                    <div className='wwd-block'>
+                    <span className='sec-title'>Blue Seed</span>
+                    <span className='text'>Fund one-offs to scale e.g. product, hiring </span>
+                    
+                    <div className='block-features'>
+                        {
+                            features.slice(3,6).map((feature, i) => (
+                                <div className="block-feature" key={i}>
+                                <Image 
+                                    src= {feature.icon} 
+                                    alt="feature" 
+                                    width={60} 
+                                    height={60} />
+                                <span>{feature.title}</span>
+                                </div>
+                            ))}
+                    </div>
                 </div>
         
             </div>
 
         </div>
       
+    </div>
     </div>
   )
 }
