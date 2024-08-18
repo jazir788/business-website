@@ -62,6 +62,17 @@
     font-size: 1.1rem;
     line-height: 1.6rem;
     font-weight: 500;
+    height: fit-content;
 
 }
+
+
+.wwd-block:nth-child(1) > .block-features >:nth-child(2){
+ margin-top: 3rem;   
+}
+
+.wwd-block:nth-child(2) > .block-features >:nth-child(1),
+.wwd-block:nth-child(2) > .block-features >:nth-child(3){
+    margin-top: 2rem;   
+   }
 
