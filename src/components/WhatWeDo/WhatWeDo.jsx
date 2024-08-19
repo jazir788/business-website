@@ -54,6 +54,24 @@ const WhatWeDo = () => {
         
             </div>
 
+            <div className='wwd-support'>
+                <div>
+                        <span className='sec-title'>Blue Growth Support</span>
+                        <span className='des'> Data Insights and full stack expertise to supercharge growth
+                        </span>
+                </div>
+
+                <div>
+                    <span className='text'>
+                            Actionable data insights by connecting revenue, marketing and social media platforms
+                    </span>
+                    <span>
+                            engineering, marketing analytics, partnerships, brand, intellectual property, market
+                            expansion, talent management 
+                    </span>
+                </div>
+            </div>
+
         </div>
       
     </div>
