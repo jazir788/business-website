@@ -102,3 +102,28 @@
     flex: 1.6;
 }
 
+@media (max-width: 990px){
+    .wwd-blocks{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px){
+    .wwd-support{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+    .wwd-block{
+        width: 80%;
+        margin: auto;
+    }
+    .block-features{
+        flex-direction: column;
+    }
+    .block-feature{
+        margin-top: 0rem!important;
+    }
+}
