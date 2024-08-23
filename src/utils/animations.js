@@ -34,14 +34,14 @@ export const tagVariants = {
 export const titleVariants = {
     "offscreen": {
         opacity: 0,
-        y:30
+        y:35
     },
     "onscreen": {
         opacity:1,
         y:0,
         transition:{
             type:"spring",
-            duration:2.2,
+            duration:2.3,
         }
     }
 }
@@ -49,7 +49,7 @@ export const titleVariants = {
 export const desVariants = {
     "offscreen": {
         opacity: 0,
-        y:20
+        y:22
     },
     "onscreen": {
         opacity:1,
@@ -57,7 +57,7 @@ export const desVariants = {
         transition:{
             type:"spring",
             duration:2,
-            delay: .2
+            delay: .3
         }
     }
 }
