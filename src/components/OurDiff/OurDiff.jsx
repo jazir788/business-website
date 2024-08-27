@@ -1,9 +1,9 @@
 import React from 'react'
-import './OurDiff'
+import './OurDiff.css'
 
 const OurDiff = () => {
   return (
-    <div>
+    <div className='od-wrapper'>
       
     </div>
   )
