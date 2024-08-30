@@ -2,6 +2,8 @@ import React from 'react'
 import './OurDiff.css'
 import { features, ourDiffFeatures } from '@/src/utils/data'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { containerVariants, desVariants, tagVariants, titleVariants } from '@/src/utils/animations'
 
 const OurDiff = () => {
   return (
@@ -9,20 +11,37 @@ const OurDiff = () => {
         <div className='container'>
             <div className='od-container'>
                 <div className='od-head'>
-                    <span className='tag'>Our Difference</span>
-                    <span className='title'>Fair Capitle, hassle free</span>
-                    <span className='text'> Our mission is to level the playing field for early stage growth capital.
+                    <motion.span 
+                        variants={tagVariants}
+                        initial="offscreen"
+                        whileInView={"onscreen"}
+                        className='tag'>Our Difference</motion.span>
+                    <motion.span 
+                        variants={titleVariants}
+                        initial="offscreen"
+                        whileInView={"onscreen"}
+                        className='title'>Fair Capital, hassle free</motion.span>
+                    <motion.span 
+                        variants={desVariants}
+                        initial="offscreen"
+                        whileInView={"onscreen"}
+                        className='text'> Our mission is to level the playing field for early stage growth capital.
                     <br /> We provide capital that is unbiased, flexible and non dilutive with the execution of support to
-                    accelerate value creation.</span>
+                    accelerate value creation.</motion.span>
                 </div>
                 <div className='od-features'>
                 {
                     ourDiffFeatures.map((feature, i) => (
-                        <div key={i} className='od-feature'>
+                        <motion.div
+                            variants={containerVariants((i + 1) * 0.1 )}
+                            initial="offscreen"
+                            whileInView={"onscreen"} 
+                            key={i} className='od-feature'
+                        >
                             <Image src={feature.icon} alt ="feature" width={128} height={128}/>
                             <span className='sec-title'>{feature.title}</span>
                             <span className='text'>{feature.des}</span>
-                        </div>                    
+                        </motion.div>                    
                     ))
                 }
                 </div>
