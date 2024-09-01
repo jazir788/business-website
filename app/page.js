@@ -7,6 +7,7 @@ import BrandingVideo from '@/src/components/BrandingVideo/BrandingVideo';
 import WhatWeDo from '@/src/components/WhatWeDo/WhatWeDo';
 import OurDiff from '@/src/components/OurDiff/OurDiff';
 import { motion, useAnimation } from 'framer-motion';
+import HowItWorks from '@/src/components/HowItWorks/HowItWorks';
 export default function Home() {
   const controls = useAnimation()
 
@@ -26,6 +27,7 @@ export default function Home() {
       viewport={{amount: 0.4}}
       >
         <OurDiff />
+        <HowItWorks />
       </motion.div>
     </motion.div>
   );
