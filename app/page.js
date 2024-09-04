@@ -26,9 +26,9 @@ export default function Home() {
       })}
       viewport={{amount: 0.4}}
       >
-        <OurDiff />
-        <HowItWorks />
       </motion.div>
+      <OurDiff />
+      <HowItWorks />
     </motion.div>
   );
 }
