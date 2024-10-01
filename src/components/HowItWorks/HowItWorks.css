@@ -49,3 +49,41 @@
     font-size: 1.1rem;
 
 }
+
+.hiw-feature:nth-of-type(2){
+    margin-left: 10rem;
+}
+
+
+.hiw-feature:nth-of-type(1),.hiw-feature:nth-of-type(3) {
+    margin-left: 5rem;
+}
+
+@media (max-width: 1280px) {
+    .hiw-feature{
+        max-width: 80%;
+    }
+
+    .hiw-feature:nth-of-type(2){
+        margin-left: 0rem;
+    }
+
+    .hiw-feature:nth-of-type(1),.hiw-feature:nth-of-type(3) {
+        margin-right: 0rem;
+    }
+
+    .hiw-feature .detail{
+        translate: 0;
+    }
+    
+    .hiw-feature .icon img{
+        translate: 0;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .hiw-feature{
+        flex-direction: column-reverse;
+    }    
+}
