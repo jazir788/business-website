@@ -67,7 +67,19 @@
     width: 100%;
 }
 
+@media (max-width:990px){
+    .wwi-container{
+        flex-direction: column;
+        padding: 2rem;
+    }
 
+    .wwi-right{
+        align-self: center;
+        margin-top: 2rem;
+    }
 
+    .wwi-right img{
+        max-width: 20rem;
+    }
 
 }
