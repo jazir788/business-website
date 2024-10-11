@@ -4,11 +4,23 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {RxCross2} from 'react-icons/rx'
+import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
 
 const Navbar = () => {
-    const [mobileMenuOpened, setMobileMenuOpened] = useState(false)
+    const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
+    const [navStyle, setNavStyle] = useState("");
+    const [scrollYProgress] = useScroll();
+
+    useMotionValueEvent(scrollYProgress, "change", (latest => {
+        if(latest > 0.2){
+            setNavStyle("sticky")
+        } else{
+            setNavStyle("")
+        }
+    }))
+
   return (
-    <div className='n-wrapper'>
+    <div className={`n-wrapper ${navStyle}`}>
 
         <div className='container'>
             <div className='n-container'> 
