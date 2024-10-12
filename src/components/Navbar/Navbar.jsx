@@ -5,6 +5,8 @@ import './Navbar.css'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {RxCross2} from 'react-icons/rx'
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion'
+import { Link } from 'react-scroll'
+
 
 const Navbar = () => {
     const [mobileMenuOpened, setMobileMenuOpened] = useState(false);
@@ -30,10 +32,18 @@ const Navbar = () => {
 
                 <div className='n-right'>
                     <div className='n-menu'>
+                    <Link to='wwd-wrapper' spy={true} smooth={true}>
                         <span>What we do</span>
+                    </Link>
+                    <Link to='hiw-wrapper' spy={true} smooth offset={100}>
                         <span>How it works</span>
+                    </Link>
+                    <Link to='wwi-wrapper' spy={true} smooth>
                         <span>Who we invest in</span>
+                    </Link>
+                    <Link to='t-wrapper' spy={true} smooth offset={100}>
                         <span>Testimonials</span>
+                    </Link>
                     </div>
                     <div className='fund-button'>
                     Get Funded
