@@ -67,7 +67,7 @@ const Navbar = () => {
         style={{transform: mobileMenuOpened && "translateX(0%)" }}>
 
         <Link
-            onClick={()= setMobileMenuOpened(false)}
+            onClick={()=> setMobileMenuOpened(false)}
             to='wwd-wrapper'
             spy={true}
             smooth={true}
@@ -75,7 +75,7 @@ const Navbar = () => {
             <span>What we do</span>
         </Link>
         <Link
-            onClick={()= setMobileMenuOpened(false)}
+            onClick={()=> setMobileMenuOpened(false)}
             to='hiw-wrapper'
             spy={true}
             smooth={true}
@@ -83,7 +83,7 @@ const Navbar = () => {
             <span>How it works</span>  
         </Link>    
         <Link
-            onClick={()= setMobileMenuOpened(false)}
+            onClick={()=> setMobileMenuOpened(false)}
             to='wwi-wrapper'
             spy={true}
             smooth={true}
@@ -91,7 +91,7 @@ const Navbar = () => {
             <span>Who we invest in</span>
         </Link>
         <Link
-            onClick={()= setMobileMenuOpened(false)}
+            onClick={()=> setMobileMenuOpened(false)}
             to='t-wrapper'
             spy={true}
             smooth={true}
