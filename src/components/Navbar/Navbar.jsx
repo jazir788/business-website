@@ -66,11 +66,39 @@ const Navbar = () => {
         <div className='nm-menu'
         style={{transform: mobileMenuOpened && "translateX(0%)" }}>
 
+        <Link
+            onClick={()= setMobileMenuOpened(false)}
+            to='wwd-wrapper'
+            spy={true}
+            smooth={true}
+        >
             <span>What we do</span>
-            <span>How it works</span>                        
+        </Link>
+        <Link
+            onClick={()= setMobileMenuOpened(false)}
+            to='hiw-wrapper'
+            spy={true}
+            smooth={true}
+        >
+            <span>How it works</span>  
+        </Link>    
+        <Link
+            onClick={()= setMobileMenuOpened(false)}
+            to='wwi-wrapper'
+            spy={true}
+            smooth={true}
+        >                           
             <span>Who we invest in</span>
+        </Link>
+        <Link
+            onClick={()= setMobileMenuOpened(false)}
+            to='t-wrapper'
+            spy={true}
+            smooth={true}
+        >
             <span>Testimonials</span>
-            <div className='m-funded-button'>Get Funded</div>
+        </Link>
+        <div className='m-funded-button'>Get Funded</div>
         </div>
         </div>
     </div>
